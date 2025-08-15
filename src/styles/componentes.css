@@ -1,0 +1,31 @@
+.botao {
+    @apply bg-blue-500 text-white;
+    @apply font-bold py-2 px-4 rounded;
+    @apply hover:bg-blue-600 text-white;
+}
+
+.form-error {
+    @apply text-white font-medium;
+    @apply flex justify-center;
+    @apply bg-red-600 mt-1 rounded-xl;
+}
+
+.div-field {
+    @apply flex flex-col text-black p-5;
+}
+
+.field {
+    @apply bg-[#EAE8E8] h-16 rounded-full text-xl p-6 ;
+}
+
+.field-contato {
+    @apply bg-[#EAE8E8] h-16 rounded-full text-xl p-6;
+}
+
+.field-contato-box {
+    @apply bg-[#EAE8E8] h-[12rem] rounded-3xl text-xl p-6 resize-none;
+}
+
+.field-senha {
+    @apply bg-[#EAE8E8] h-16 w-[24rem] rounded-full text-xl p-6;
+}
