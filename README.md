@@ -25,6 +25,7 @@ O projeto visa criar um espaço interativo e colaborativo, promovendo aprendizad
 
 ## 🔧 Como rodar o projeto localmente
 
+```bash
 # 1. Clone este repositório
 git clone https://github.com/seu-usuario/tecna.git
 
@@ -53,5 +54,5 @@ mysql -u root -p db_tecna < db_tecna.sql
 npm start
 
 # 8. Acesse no navegador
-http://localhost:3000
+# http://localhost:3000
 
