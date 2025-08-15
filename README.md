@@ -1,38 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌐 TECNA — Comunidade de Hardware
 
-## Getting Started
+Plataforma online para compartilhamento de conhecimento sobre hardware de computadores, permitindo que os usuários tirem dúvidas, ajudem outros entusiastas e compartilhem experiências. Desenvolvido em React no frontend e Node.js com MySQL no backend.
 
-First, run the development server:
+O projeto visa criar um espaço interativo e colaborativo, promovendo aprendizado e troca de informações sobre hardware.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Principais funcionalidades
+- 📝 Criar conta de usuário
+- 🔑 Login/logout
+- 🖊️ Criar posts sobre hardware
+- 💬 Comentar em posts de outros usuários
+- 👀 Visualizar posts e comentários da comunidade
+- ⚙️ Estrutura pensada para fácil expansão e manutenção
+- 📦 Integração com MySQL para armazenamento de dados
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 📸 Preview
+![Preview da Tecna](./preview.png)  
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## 🔧 Como rodar o projeto localmente
 
-To learn more about Next.js, take a look at the following resources:
+# 1. Clone este repositório
+git clone https://github.com/seu-usuario/tecna.git
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 2. Acesse a pasta do projeto
+cd tecna
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# 3. Instale as dependências
+npm install
 
-## Deploy on Vercel
+# 4. Crie o banco de dados MySQL
+# Certifique-se de ter o MySQL instalado localmente
+mysql -u root -p
+CREATE DATABASE db_tecna;
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 5. Importe o arquivo SQL do banco de dados
+mysql -u root -p db_tecna < db_tecna.sql
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# 6. Crie um arquivo .env na raiz do projeto com as credenciais do banco
+# Exemplo de .env:
+# DB_HOST=localhost
+# DB_USER=root
+# DB_PASSWORD=
+# DB_NAME=db_tecna
+
+# 7. Inicie o servidor
+npm start
+
+# 8. Acesse no navegador
+http://localhost:3000
+
